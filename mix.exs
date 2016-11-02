@@ -22,7 +22,8 @@ defmodule Libradis.Mixfile do
     [
       {:exjsx, "~> 3.2"},
       {:httpoison, "~> 0.9.2"},
-      {:exredis, "~> 0.2.5"}
+      {:exredis, "~> 0.2.5"},
+      {:dialyxir, "~> 0.4", only: [:dev]}
     ]
   end
 end

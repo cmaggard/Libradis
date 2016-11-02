@@ -1,4 +1,5 @@
 %{"certifi": {:hex, :certifi, "0.7.0", "861a57f3808f7eb0c2d1802afeaae0fa5de813b0df0979153cbafcd853ababaf", [:rebar3], []},
+  "dialyxir": {:hex, :dialyxir, "0.4.0", "53ac3014bb4aef647728a697052b4db3a84c6742de7aab0e0a1c863ea274007b", [:mix], []},
   "eredis": {:hex, :eredis, "1.0.8", "ab4fda1c4ba7fbe6c19c26c249dc13da916d762502c4b4fa2df401a8d51c5364", [:rebar], []},
   "exjsx": {:hex, :exjsx, "3.2.1", "1bc5bf1e4fd249104178f0885030bcd75a4526f4d2a1e976f4b428d347614f0f", [:mix], [{:jsx, "~> 2.8.0", [hex: :jsx, optional: false]}]},
   "exredis": {:hex, :exredis, "0.2.5", "34d02fa9ef32174cbd790b166746f91b3dbc131ce37a2d9a2451e8bba164b423", [:mix], [{:eredis, ">= 1.0.8", [hex: :eredis, optional: false]}]},
