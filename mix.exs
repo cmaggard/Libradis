@@ -21,7 +21,8 @@ defmodule Libradis.Mixfile do
   defp deps do
     [
       {:exjsx, "~> 3.2"},
-      {:httpoison, "~> 0.9.2"}
+      {:httpoison, "~> 0.9.2"},
+      {:exredis, "~> 0.2.5"}
     ]
   end
 end
