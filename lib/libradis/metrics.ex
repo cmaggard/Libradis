@@ -1,17 +1,25 @@
 defmodule Libradis.Metrics do
+  @type name :: String.t
+  @type command :: [String.t, ...]
+  @type metric :: {name, command}
+
+  @spec scard(String.t, String.t) :: metric
   def scard(name, key) do
-    ["SCARD", key]
+    {name, ["SCARD", key]}
   end
 
+  @spec llen(String.t, String.t) :: metric
   def llen(name, key) do
-    ["LLEN", key]
+    {name, ["LLEN", key]}
   end
 
+  @spec zcard(String.t, String.t) :: metric
   def zcard(name, key) do
-    ["ZCARD", key]
+    {name, ["ZCARD", key]}
   end
 
+  @spec get(String.t, String.t) :: metric
   def get(name, key) do
-    ["GET", key]
+    {name, ["GET", key]}
   end
 end
