@@ -52,5 +52,6 @@ An Elixir application that fetches information from a Redis database and posts i
 
 # Future Goals
 
+* Support librato counters as well (currently only supports gauge-type metrics)
 * Autodiscovery of metric modules, like Mix.Tasks does. I wish the discovery bits from that were extracted, because that's what I'd have to rewrite.
 * Extracting data source and destination handling code into their own modules

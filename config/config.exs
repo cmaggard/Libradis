@@ -28,3 +28,9 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :libradis,
+  metrics: [ Libradis.Example ],
+  redis_url: System.get_env("REDIS_URL"),
+  librato_user: System.get_env("LIBRATO_USER"),
+  librato_token: System.get_env("LIBRATO_TOKEN")

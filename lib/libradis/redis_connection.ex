@@ -17,5 +17,5 @@ defmodule Libradis.RedisConnection do
     redis_url |> Exredis.start_using_connection_string
   end
 
-  defp redis_url, do: System.get_env("REDIS_URL")
+  defp redis_url, do: Application.get_env(:libradis, :redis_url)
 end
