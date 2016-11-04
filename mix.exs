@@ -15,6 +15,9 @@ defmodule Libradis.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger, :httpoison],
+     env: [redis_url: System.get_env("REDIS_URL"),
+           librato_user: System.get_env("LIBRATO_USER"),
+           librato_token: System.get_env("LIBRATO_TOKEN")],
      mod: {Libradis, []}]
   end
 

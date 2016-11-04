@@ -31,6 +31,4 @@ use Mix.Config
 
 config :libradis,
   metrics: [ Libradis.Example ],
-  redis_url: System.get_env("REDIS_URL"),
-  librato_user: System.get_env("LIBRATO_USER"),
-  librato_token: System.get_env("LIBRATO_TOKEN")
+  interval: 5
