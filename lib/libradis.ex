@@ -9,6 +9,7 @@ defmodule Libradis do
     # Define workers and child supervisors to be supervised
     children = [
       worker(Libradis.RedisConnection, []),
+      worker(Libradis.Timer, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
