@@ -5,8 +5,8 @@ defmodule Libradis.Mixfile do
     [app: :libradis,
      version: "0.1.0",
      elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
@@ -27,6 +27,22 @@ defmodule Libradis.Mixfile do
       {:httpoison, "~> 0.9.2"},
       {:exredis, "~> 0.2.5"},
       {:dialyxir, "~> 0.4", only: [:dev]}
+    ]
+  end
+
+  defp description do
+    """
+      A library application for posting results of Redis queries to Librato
+    """
+  end
+
+  defp package do
+    [
+      name: :libradis,
+      files: ~w[lib config mix* README* LICENSE* test],
+      maintainers: ["Cody Maggard"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/cmaggard/libradis"}
     ]
   end
 end
