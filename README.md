@@ -1,5 +1,3 @@
-# >> Work in Progress <<
-
 # Libradis
 
 An Elixir application that fetches information from a Redis database and posts it to Librato
@@ -45,7 +43,7 @@ An Elixir application that fetches information from a Redis database and posts i
   ```
 
 
-5. Export needed configuration values (`REDIS_URL`), and...
+5. Export needed configuration values (`REDIS_URL`,`LIBRATO_USER`,`LIBRATO_TOKEN`), and...
 
 6. Start it up!
 

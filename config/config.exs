@@ -30,5 +30,4 @@ use Mix.Config
 #     import_config "#{Mix.env}.exs"
 
 config :libradis,
-  metrics: [ Libradis.Example ],
   interval: 5
